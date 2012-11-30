@@ -12,27 +12,27 @@
 <script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
 <script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap-validation.js"></script>
+<script>
+$(document).ready(function() {
+	var images=["http://natasg.github.com/images/bg1.jpg","http://natasg.github.com/images/bg2.jpg","http://natasg.github.com/images/bg3.jpg","http://natasg.github.com/images/bg4.jpg"];
+	
+	$("#body").attr("background",images[Math.round(Math.random()*10)%images.length]);
+	$("#natas").click(
+		function(){
+			this.href="homepage.html?"+Math.random();	
+		}
+	);
+	 
+});
+</script>
 
-<style>
-
-</style>
 </head>
 
-<body style="background-image: none; background-position: initial initial; background-repeat: initial initial;">
-    <script type="text/javascript">
-    BYB.images = [
-        'http://natasg.github.com/images/bg1.jpg'
-        ,'http://natasg.github.com/images/bg2.jpg'
-        ,'http://natasg.github.com/images/bg3.jpg'
-        ,'http://natasg.github.com/images/bg4.jpg'
-    ];
-    BYB.img = new Image();
-    BYB.img.src = BYB.images[parseInt(Math.random()*10,10)%4];
-    BYB.img.id = 'bgImage'
-</script>
+<body background="http://natasg.github.com/images/bg1.jpg" id="body">
+  
 <div id="mycard" class="clearfix">
     <div class="name">
-        <a href="/" class="link-icon">Natas</a>
+        <a id="natas" href="#" class="link-icon">Natas</a>
     </div>
     <div class="blog">
         <a href="/blog" class="link-icon"><span></span></a>
@@ -55,53 +55,7 @@
         <a href="/atom.xml" class="link-info" style="height: 0px;"><span>Rss</span></a>
     </div>
 </div>
-<script type="text/javascript">
-    $(document).ready(function(){
-        var imgWidth,imgHeight,winWidth,winHeight;
-        var imgComplete = function(){
-            imgHeight = BYB.img.height;
-            imgWidth = BYB.img.width;
-            resizeWindow();
-            //$('#mycard').css({'opacity':0.8});
-            $('body').css('background','none');
-            $(BYB.img).animate({opacity:'toggle'},500);
-        };
 
-        var resizeWindow = function(){
-            var _width,_height;
-            winHeight = $(document).height();
-            winWidth = $(document).width();
-            _height = imgHeight*winWidth/imgWidth;
-            _width = imgWidth*winHeight/imgHeight;
-            if(_height < winHeight){
-                $('#bgImage').css({'height':winHeight,'width':_width,'left':-(_width-winWidth)*0.5});
-            }else{
-                $('#bgImage').css({'width':winWidth,'height':_height,'left':0});
-            }
-        };
-
-        $(BYB.img).css({'position':'fixed','top':'0','z-index':'-2','display':'none'});
-        $('body').append(BYB.img);
-        if(BYB.img.complete){
-            imgComplete()
-        }else{
-            BYB.img.onload = imgComplete;
-        }
-
-        $(window).on('resize',resizeWindow);
-
-        $('#mycard div').on('mouseenter',function(){
-            if(!$(this).hasClass('name')){
-                $(this).addClass('link-hover');
-                $(this).children('.link-info').removeClass('hide').animate({height:'23px'},'fast');
-            }
-        });
-        $('#mycard div').on('mouseleave',function(){
-            $(this).removeClass('link-hover');
-            $(this).children('.link-info').stop().animate({height:'0'});
-        });
-    })
-</script>
 </body>
 
 
