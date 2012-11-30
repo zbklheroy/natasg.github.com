@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>基本订单表单的HTML代码</title>
+
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+
+
+<script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap-validation.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+<ul class="breadcrumb">
+  <li>
+    <a href="#">首页</a> <span class="divider">/</span>
+  </li>
+  <li>
+    <a href="#">类库</a> <span class="divider">/</span>
+  </li>
+  <li class="active">数据</li>
+</ul>
+
+<ul class="nav nav-list">
+  <li class="nav-header">
+    
+  </li>
+  <li class="active">
+    <a href="#">首页</a>
+  </li>
+  <li>
+    <a href="#">类库</a>
+  </li>
+  
+</ul>
+<div class="hero-unit"><h1>基本订单表单的HTML代码</h1></div>
+
+<span class="badge">1</span>
+<span class="badge badge-success">2</span>
+<span class="badge badge-warning">4</span>
+<span class="badge badge-error">6</span>
+<span class="badge badge-info">8</span>
+<span class="badge badge-inverse">10</span><br />
+
+<span class="label">默认</span>
+<span class="label label-success">成功</span>
+<span class="label label-warning">警告</span>
+<span class="label label-important">重要</span>
+<span class="label label-info">信息</span>
+<span class="label label-inverse">逆操作</span>
+
+<form action="processorder.php" method="post">
+<table class="table-striped" align="center">
+<tr bgcolor="#cccccc">
+<td width="150">Item</td>
+<td width="5">Quantity</td>
+</tr>
+
+<tr>
+<td>Tires</td>
+<td align="center"><input type="text" name="tireqty" size="3"
+ maxlength="3" />
+</td>
+</tr>
+
+<tr>
+<td>oil</td>
+<td align="center"><input type="text" name="oilqty" size="3" 
+ maxlength="3"  />
+</td>
+</tr>
+
+<tr>
+<td>Spark plugs</td>
+<td align="center"><input type="text" name="sparkqty" size="3" 
+ maxlength="3"  />
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="submit" value="Submit" class="btn btn-primary btn-large"/> </td>
+</tr>
+
+</table>
+</form>
+<ul class="pager">
+  <li>
+    <a href="#">前一页</a>
+  </li>
+  <li>
+    <a href="#">后一页</a>
+  </li>
+</ul>
+
+<div class="pagination">
+  <ul>
+    <li><a href="#">前一页</a></li>
+    <li class="active">
+      <a href="#">1</a>
+    </li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">后一页</a></li>
+  </ul>
+</div>
+
+<div class="alert alert-error"><a class="close" data-dismiss="alert">×</a>Message!</div>
+<div class="alert alert-success"><a class="close" data-dismiss="alert">×</a>Message!</div>
+<div class="alert alert-info"><a class="close" data-dismiss="alert">×</a>Message!</div>
+</div>
+</body>
+</html>
