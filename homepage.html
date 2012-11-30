@@ -7,7 +7,7 @@
 
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 <link type="text/css" rel="stylesheet" href="default.css"/>
-
+<link rel="shortcut icon" href="http://natasg.github.com/images/short.ico" type="image/x-icon"/>
 
 <script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
 <script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -22,9 +22,27 @@ $(document).ready(function() {
 			this.href="homepage.html?"+Math.random();	
 		}
 	);
+	
+	$('#mycard div').on('mouseenter',function(){
+            if(!$(this).hasClass('name')){
+                $(this).addClass('link-hover');
+                $(this).children('.link-info').removeClass('hide').animate({height:'23px'},'fast');
+            }
+    });
+    $('#mycard div').on('mouseleave',function(){
+        $(this).removeClass('link-hover');
+        $(this).children('.link-info').stop().animate({height:'0'});
+    });
+ 
 	 
 });
 </script>
+
+
+   
+
+        
+
 
 </head>
 
