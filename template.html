@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bootstrap</title>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#login").click(function(){
+		$("#signwhat").html("sign in......");
+		$('#myModal').modal({
+   			backdrop:true,
+    		keyboard:true,
+    		show:true
+		});
+		
+	});	
+	$("#sign").click(function(){
+		$("#signwhat").html("sign up......");
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse">
+	    <ul class="nav">
+              <li class="">
+                <a href="./index.html">概述</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">框架</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">基础CSS</a>
+              </li>
+              <li class="active">
+                <a href="./components.html">组件</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">Javascript插件</a>
+              </li>
+            
+              <li class="divider-vertical"></li>
+                  
+            </ul>
+            <p class="pull-right">
+           
+        <a id='sign' data-toggle="modal" href="#myModal"  class="btn btn-success">Sign up</a>
+        <a id='login' class="btn" href="#">Sign in</a>
+    </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="images/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>旋转木马1.</h1>
+              <p class="lead">Welcome!</p>
+              <a class="btn btn-large btn-primary" href="#">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img src="images/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>旋转木马2.</h1>
+              <p class="lead">Congratulations</p>
+              <a class="btn btn-large btn-primary" href="#">Button Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>旋转木马3.</h1>
+              <p class="lead">Simida!</p>
+              <a class="btn btn-large btn-primary" href="#">Button Button Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>
+<div class="container">
+      <hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="images/browser-icon-chrome.png">
+        <h2 class="featurette-heading">Chrome<span class="muted">&Google</span></h2>
+        <p class="lead">Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的开放原始码网页浏览器。该浏览器是基于其他开放原始码软件所撰写，包括WebKit和Mozilla，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。软件的名称是来自于称作Chrome的网路浏览器图形使用者界面（GUI）。软件的beta测试版本在2008年9月2日发布，提供43种语言版本，有支持Windows平台、Mac OS X和Linux版本提供下载。2012年8月6日，Chrome已达全球份额的34%，成使用最广浏览器。</p>
+      </div>
+      <hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="images/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Firefox<span class="muted">&Mozilla</span></h2>
+        <p class="lead">Mozilla Firefox，中文名通常称为"火狐"，是一个开源网页浏览器，使用Gecko引擎（即非ie内核），可以在多种操作系统如Windows，Mac和linux上运行。。Firefox由Mozilla基金会与数百个志愿者所开发，原名"Phoenix"（凤凰），之后改名"Mozilla Firebird"（火鸟），再改为现在的名字。2012年8月，在世界范围内，Firefox占据着23%的使用份额。</p>
+      </div>
+      <hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="images/browser-icon-safari.png">
+        <h2 class="featurette-heading">Safari<span class="muted">&Apple</span></h2>
+        <p class="lead">Safari是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与iPod touch的指定浏览器。Windows版本的首个测试版在2007年6月11日推出，支持Windows XP与Windows Vista，在2008年3月18日推出正式版。</p>
+      </div>
+      
+      
+      <div id="myModal" class="modal hide fade in" style="display: none;">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h2 id="signwhat" class="form-signin-heading">Sign up......</h2>
+            </div>
+            <div class="modal-body">
+      <form class="form-horizontal">
+  <fieldset>
+    
+    <div class="control-group">
+      <label class="control-label" for="input01">您的电子邮箱</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+        <p class="help-block">您的电子邮箱</p>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input01">您的密码</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+        <p class="help-block">字母数字符号皆可</p>
+      </div>
+    </div>
+  </fieldset>
+</form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-large btn-primary" type="submit">Submit</button>
+            </div>
+          </div>
+      
+</div> <!-- /container -->
+ <div id="footer">
+ 	
+      <div class="container">
+      <hr/>
+        <p class="muted credit">© Company 2012. ·<a href="#">Natas</a></p>
+      </div>
+</div>   
+    
+    <!--
+    <script src="jquery-1.8.0.min.js"></script>
+    <script src="bootstrap-transition.js"></script>
+    <script src="bootstrap-alert.js"></script>
+    <script src="bootstrap-modal.js"></script>
+    <script src="bootstrap-dropdown.js"></script>
+    <script src="bootstrap-scrollspy.js"></script>
+    <script src="bootstrap-tab.js"></script>
+    <script src="bootstrap-tooltip.js"></script>
+    <script src="bootstrap-popover.js"></script>
+    <script src="bootstrap-button.js"></script>
+    <script src="bootstrap-collapse.js"></script>
+    <script src="bootstrap-carousel.js"></script>
+    <script src="bootstrap-typeahead.js"></script>
+    -->
+</body>
+</html>
