@@ -6,10 +6,14 @@
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 <link type="text/css" rel="stylesheet" href="style.css"/>
+
 <script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
 <script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="ckeditor/ckeditor.js"></script>
+	
 <script>
 $(document).ready(function() {
+	
 	$("#login").click(function(){
 		$("#signwhat").html("sign in......");
 		$('#myModal').modal({
@@ -122,9 +126,12 @@ $(document).ready(function() {
         <h2 class="featurette-heading">Safari<span class="muted">&Apple</span></h2>
         <p class="lead">Safari是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与iPod touch的指定浏览器。Windows版本的首个测试版在2007年6月11日推出，支持Windows XP与Windows Vista，在2008年3月18日推出正式版。</p>
       </div>
+      <hr class="featurette-divider">
+     <textarea rows="30" cols="50" name="editor01">请输入.</textarea>
+		  <script type="text/javascript">CKEDITOR.replace('editor01');</script>
       
       
-      <div id="myModal" class="modal hide fade in" style="display: none;">
+        <div id="myModal" class="modal hide fade in" style="display: none;">
             <div class="modal-header">
               <a class="close" data-dismiss="modal">×</a>
               <h2 id="signwhat" class="form-signin-heading">Sign up......</h2>
