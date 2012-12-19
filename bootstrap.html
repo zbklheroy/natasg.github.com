@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bootstrap</title>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+<style>body{
+padding-top: 40px;	
+}</style>
+
+<script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="style.js"></script>
+	
+<script>
+$(document).ready(function() {});
+</script>
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse">
+	    
+            <p class="pull-right">
+           
+        <a id='sign' data-toggle="modal" href="#myModal"  class="btn btn-success">Sign up</a>
+        <a id='login' class="btn" href="#">Sign in</a>
+    </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="container">
+<hr />
+	
+    <table class="table table-striped table-bordered table-condensed span4">
+    <tr><th><h1>example</h1></th></tr>
+    <tr><td><a href="bootstrap-button.html"><h1>按钮</h1></a></td></tr>
+    <tr><td><a href="bootstrap-table.html"><h1>表格</h1></a></td></tr>
+    <tr><td><a href="bootstrap-form.html"><h1>表单</h1></a></td></tr>
+    <tr><td><a href="bootstrap-components.html"><h1>组件</h1></a></td></tr>
+    </table>
+    <link rel='stylesheet' type='text/css' href='http://www.osctools.net/js/syntaxhighlighter_3.0.83/styles/shCoreMDUltra.css'/><div id="highlighter_472492" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js comments">/*&nbsp;---示例代码----*/</code></div><div class="line number2 index1 alt1"><code class="js plain">&lt;table&gt;</code></div><div class="line number3 index2 alt2"><code class="js plain">hello</code></div><div class="line number4 index3 alt1"><code class="js plain">&lt;/table&gt;</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="js comments">/*&nbsp;---示例代码----*/</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;</code>&nbsp;</div></div></td></tr></tbody></table></div>
+
+</div>
+<div id="footer"> 	
+	<div class="container">
+	<hr/>
+		<p class="muted credit">© Company 2012. ·<a href="#">Natas</a></p>
+	</div>
+</div>   
+<div id="myModal" class="modal hide fade in" style="display: none;">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h2 id="signwhat" class="form-signin-heading">Sign up......</h2>
+            </div>
+            <div class="modal-body">
+      <form class="form-horizontal">
+  <fieldset>
+    
+    <div class="control-group">
+      <label class="control-label" for="input01">您的电子邮箱</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+        <p class="help-block">您的电子邮箱</p>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input01">您的密码</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+        <p class="help-block">字母数字符号皆可</p>
+      </div>
+    </div>
+  </fieldset>
+</form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-large btn-primary" type="submit">Submit</button>
+            </div>
+          </div>
+</body>
+</html>
