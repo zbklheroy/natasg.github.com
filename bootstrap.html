@@ -19,7 +19,7 @@ $(document).ready(function() {});
 </head>
 
 <body>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -27,29 +27,38 @@ $(document).ready(function() {});
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="./index.html">Bootstrap</a>
-          <div class="nav-collapse">
-	    
-            <p class="pull-right">
-           
-        <a id='sign' data-toggle="modal" href="#myModal"  class="btn btn-success">Sign up</a>
-        <a id='login' class="btn" href="#">Sign in</a>
-    </p>
-          </div>
+          <a class="brand" href="#">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+        
+              
+               <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Base <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+	    <li><a href="bootstrap-button.html">按钮</a></li>
+            <li><a href="bootstrap-table.html">表格</a></li>
+            <li><a href="bootstrap-form.html">表单</a></li>
+            
+          </ul>
+        </li>
+              
+              <li><a href="bootstrap-components.html">组件</a></li>
+              <li><a href="bootstrap-script.html">javascript插件</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
+    <hr />
+
 <div class="container">
-<hr />
+<div class="well">
+    <h1>layout</h1>
+    <h2>container</h2>
+</div>
 	
-    <table class="table table-striped table-bordered table-condensed span4">
-    <tr><th><h1>example</h1></th></tr>
-    <tr><td><a href="bootstrap-button.html"><h1>按钮</h1></a></td></tr>
-    <tr><td><a href="bootstrap-table.html"><h1>表格</h1></a></td></tr>
-    <tr><td><a href="bootstrap-form.html"><h1>表单</h1></a></td></tr>
-    <tr><td><a href="bootstrap-components.html"><h1>组件</h1></a></td></tr>
-    </table>
-    <link rel='stylesheet' type='text/css' href='http://www.osctools.net/js/syntaxhighlighter_3.0.83/styles/shCoreMDUltra.css'/><div id="highlighter_472492" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js comments">/*&nbsp;---示例代码----*/</code></div><div class="line number2 index1 alt1"><code class="js plain">&lt;table&gt;</code></div><div class="line number3 index2 alt2"><code class="js plain">hello</code></div><div class="line number4 index3 alt1"><code class="js plain">&lt;/table&gt;</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="js comments">/*&nbsp;---示例代码----*/</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;</code>&nbsp;</div></div></td></tr></tbody></table></div>
+    
+  </div>
 
 </div>
 <div id="footer"> 	

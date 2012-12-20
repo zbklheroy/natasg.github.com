@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -24,72 +24,32 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="./index.html">Bootstrap</a>
-          <div class="nav-collapse">
-	    
-           
-          </div>
+          <a class="brand" href="#">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+        
+              
+               <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Base <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+	    <li><a href="bootstrap-button.html">按钮</a></li>
+            <li><a href="bootstrap-table.html">表格</a></li>
+            <li><a href="bootstrap-form.html">表单</a></li>
+            
+          </ul>
+        </li>
+              
+              <li><a href="bootstrap-components.html">组件</a></li>
+              <li><a href="bootstrap-script.html">javascript插件</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-  
-
-    <div class="container">
-
-      <!-- Masthead
-      ================================================== -->
-      <header class="jumbotron subhead" id="overview">
-        <h1>框架</h1>
-        <p class="lead">
-	  Bootstrap创建了响应式的12列栅格系统，并在该系统的基础上设计了固定(fixed)布局和流动宽度(fluid-width)布局。
-	</p>
-       
-      </header>
 
 
-
-
-<!-- Global Bootstrap settings
-================================================== -->
-<section id="global">
-  <div class="page-header">
-    <h1>全局样式 <small>重置CSS，排版和链接</small></h1>
-  </div>
-  <div class="row">
-    <div class="span4">
-      <h2>要求HTML5 doctype</h2>
-      <p>
-	Bootstrap用到的HTML元素和CSS属性需要HTML5 doctype。因此每个使用Bootstrap的页面都应该包启HTML5声明。
-      </p>
-<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">lang</span><span class="pun">=</span><span class="atv">"en"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  ...</span></li><li class="L3"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
-    </div><!-- /.span -->
-    <div class="span4">
-      <h2>排版和链接</h2>
-      <p>在 <strong>scaffolding.less</strong> 文件中，设置了基本的全局显示效果，排版和链接样式。具体来说，我们:</p>
-      <ul>
-        <li>移除了body的margin</li>
-        <li>设置 <code>body</code> 背景色为 <code>background-color: white;</code> </li>
-        <li>将 <code>@baseFontFamily</code>, <code>@baseFontSize</code>, 和 <code>@baseLineHeight</code> 做为排版的基础变量</li>
-        <li>使用 <code>@linkColor</code> 设置全局链接的颜色，链接仅在 <code>:hover</code> 状下显示下划线</li>
-      </ul>
-    </div><!-- /.span -->
-    <div class="span4">
-      <h2>通过Normalize重置默认样式</h2>
-      <p>
-	从Bootstrap 2开始，使用 <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> 对默认的CSS进行重置(reset)。
-	 <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> 项目由 <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> 创建 <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a> 项目也出于他手。
-      </p>
-      <p>
-	新的reset代码保存在 <strong>reset.less</strong> ，并移除了一些元素，从而更加简洁明了。
-      </p>
-    </div><!-- /.span -->
-  </div><!-- /.row -->
-</section>
-
-
-
-
+<div class="container">
 <!-- Grid system
 ================================================== -->
 <section id="gridSystem">
@@ -127,24 +87,7 @@
   <div class="row show-grid">
     <div class="span12">12</div>
   </div>
-  <div class="row">
-    <div class="span4">
-      <p>
-	做为框架默认的一部分，Bootstrap提供了<strong>940px宽, 12列的栅格系统</strong>。
-      </p>
-      <p>
-	针对各种不同的设备和分辨率，Bootstrap提供了四种响应式方案：手机，垂直平板，水平平板/小型桌面，宽屏桌面。
-      </p>
-    </div><!-- /.span -->
-    <div class="span4">
-<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
-    </div><!-- /.span -->
-    <div class="span4">
-      <p>
-	如左，一个基本的布局由两个"列"组成，栅格系统由一系列横跨12等分的"span*"组成。
-      </p>
-    </div><!-- /.span -->
-  </div><!-- /.row -->
+ 
 
   <br>
 
@@ -322,28 +265,7 @@
       </tr>
     </tbody>
   </table>
-  <div class="row">
-    <div class="span4">
-      <h3>LESS中的变量</h3>
-      <p>
-	Bootstrap内置了一组很有用的变量，用以定制上述的默认940px栅格系统。这些变量保存在variables.less中。
-      </p>
-    </div><!-- /.span -->
-    <div class="span4">
-      <h3>如何定制</h3>
-      <p>
-	修改栅格意味着改变三个 <code>@grid*</code> 变量并要重新编译Bootstrap。
-	改变variables.less中的栅格变量，再使用<a href="less.html#compiling">四种方式中的某一种重编译less</a>。
-	在添加更多列之前，要先在grid.less在定义这三个变量。
-      </p>
-    </div><!-- /.span -->
-    <div class="span4">
-      <h3>保持响应性</h3>
-      <p>
-	定制的栅格只能工作在默认的940px下，若要保证Bootstrap的全面响应性，还得更改responsive.less中的栅格内容。
-      </p>
-    </div><!-- /.span -->
-  </div><!-- /.row -->
+  
 
 </section>
 
@@ -393,7 +315,7 @@
   <!-- Supported devices -->
   <div class="row">
     <div class="span4">
-      <p><img src="assets/img/responsive-illustrations.png" alt="Responsive devices"></p>
+     
       <h3>响应式设计用来做什么？</h3>
       <p>
 	Medias Query允许浏览器基于不同的条件而使用不同的CSS：比如宽高比，宽度，显示类型等等。但最常用的条件还是 <code>min-width</code> 和 <code>max-width</code> 。

@@ -19,7 +19,7 @@ $(document).ready(function() {});
 </head>
 
 <body>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -27,15 +27,25 @@ $(document).ready(function() {});
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="./index.html">Bootstrap</a>
-          <div class="nav-collapse">
-	    
-            <p class="pull-right">
-           
-        <a id='sign' data-toggle="modal" href="#myModal"  class="btn btn-success">Sign up</a>
-        <a id='login' class="btn" href="#">Sign in</a>
-    </p>
-          </div>
+          <a class="brand" href="#">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+        
+              
+               <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Base <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+	    <li><a href="bootstrap-button.html">按钮</a></li>
+            <li><a href="bootstrap-table.html">表格</a></li>
+            <li><a href="bootstrap-form.html">表单</a></li>
+            
+          </ul>
+        </li>
+              
+              <li><a href="bootstrap-components.html">组件</a></li>
+              <li><a href="bootstrap-script.html">javascript插件</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
