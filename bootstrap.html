@@ -16,7 +16,7 @@ $(document).ready(function() {});
 </head>
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-bottom">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -48,7 +48,7 @@ $(document).ready(function() {});
     </div>
     <hr />
 
-<div class="container well" style="height:500px">
+<div class="container well" style="height:500px; background-color:#F00">
 
     <h1>layout</h1>
     <h2>container</h2>
@@ -60,8 +60,8 @@ $(document).ready(function() {});
 
 <div class="container-fluid" >
 <div class="row-fluid">
-<div class="span2 well" style="height:500px"></div>
-<div class="span10 well" style="height:500px"></div>
+<div class="span2 well" style="height:500px;background-color:#F00"></div>
+<div class="span10 well" style="height:500px;background-color:#F00"></div>
 </div>  
 </div>
 <hr />
@@ -87,7 +87,7 @@ $(document).ready(function() {});
             <td>Thornton</td>
             <td>@fat</td>
           </tr>
-          <tr class="success">
+          <tr class="warning">
             <td>3</td>
             <td>Larry</td>
             <td>the Bird</td>
@@ -95,6 +95,71 @@ $(document).ready(function() {});
           </tr>
         </tbody>
       </table>
+      <input type="text" class="input-mini" />
+      <i class="icon-refresh"></i>
+      <div class="btn-group">
+  <button class="btn btn-large btn-primary">1</button>
+  <button class="btn btn-large btn-primary">2</button>
+  <button class="btn btn-large btn-primary">3</button>
+  <div class="btn-group">
+          <button class="btn dropdown-toggle" data-toggle="dropdown">动作 <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">动作</a></li>
+            <li><a href="#">其他动作</a></li>
+            <li><a href="#">其他</a></li>
+            <li class="divider"></li>
+            <li><a href="#">被间隔的链接</a></li>
+          </ul>
+   </div>
+   
+   <div class="navbar ">
+    <div class="navbar-inner">
+      <div class="container">
+        
+        <a class="brand" href="#">项目名称</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">链接</a></li>
+            <li><a href="#">链接</a></li>
+            <li><a href="#">链接</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">动作</a></li>
+                <li><a href="#">另一个动作</a></li>
+                <li><a href="#">其他动作</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">导航头</li>
+                <li><a href="#">被间隔的链接</a></li>
+                <li><a href="#">另一个链接</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-left" action="">
+            <input type="text" class="search-query span2" placeholder="搜索">
+          </form>
+          <ul class="nav pull-right">
+            <li><a href="#">链接</a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+		<li><a href="#">动作</a></li>
+                <li><a href="#">另一个动作</a></li>
+                <li><a href="#">其他动作</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">导航头</li>
+                <li><a href="#">被间隔的链接</a></li>
+                <li><a href="#">另一个链接</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+  </div>
+</div>
 
 <div id="footer"> 	
 	<div class="container">
