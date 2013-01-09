@@ -6,6 +6,21 @@
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 <script type="text/javascript" language="javascript" src="jquery-1.8.0.min.js"></script>
 <script type="text/javascript" language="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('.tt').tooltip();
+	$('.bp').popover();
+	$('#fat-btn')
+      .click(function () {
+        var btn = $(this)
+        btn.button('loading')
+        setTimeout(function () {
+          btn.button('reset')
+        }, 3000)
+      });
+		
+});
+</script>
 <style>
 body{padding-top:60px}
 </style>
@@ -40,48 +55,48 @@ body{padding-top:60px}
     <hr />
     <h1>Team Member</h1>
     <div class="alert alert-info">
-           12位拉轰的童鞋，还有可爱的毛导、爱妹。
-           <a class="close" data-dismiss="alert" href="#">&times;</a>
-          </div>
+    	12位拉轰的童鞋，还有可爱的毛导、爱妹。
+        <a class="close" data-dismiss="alert" href="#">&times;</a>
+    </div>
           
     <ul class="thumbnails">
     	<li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="宫振锋">
             	<img src="images/team/gzf.jpg"/>
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="高帅">
             	<img src="images/team/gs.jpg" />
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="曾张松">
             	<img src="images/team/zzs.jpg"/>
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="曾令杰">
             	<img src="images/team/zlj.jpg"/>
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="宾村">
             	<img src="images/team/bc.jpg"/>
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="冯涛">
             	<img src="images/team/ft.jpg"/>
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="达敏">
             	<img src="images/team/dm.jpg"/>
             </a>
         </li>
         <li class="span3">
-        	<a href="#" class="thumbnail">
+        	<a href="javascript:;" class="thumbnail bp" rel="popover" data-placement="bottom" data-content="吴彬">
             	<img src="images/team/wb.jpg"/>
             </a>
         </li>
